@@ -1,0 +1,425 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body {
+    background-color: #070606;
+}
+
+
+/* parte do Header */
+#logo {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* display: flex; */
+    width: 60vw;
+    margin-left: 5px;
+    padding: 15px;
+}
+
+#img_menu {
+    width: 100%;
+}
+
+
+
+
+/* Alterações da pág 2(Quem somos) */
+#imgqmSomos {
+    /* padding: 5px; */
+    width: 80vw;
+    border-radius: 20px;
+    border: solid 6px #007ADD;
+
+}
+
+#qmSomos {
+    padding: 8px;
+    margin: 8px 16px;
+}
+
+
+
+
+
+iframe {
+    border-radius: 20px;
+    margin: 16px;
+    margin-left: 20px;
+    width: 50vw;
+    height: auto;
+}
+
+
+/* menu */
+#bt_menu,
+#bt_fechar {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px;
+    display: flex;
+}
+
+#bt_fechar {
+    display: none;
+    width: 9vw;
+}
+
+#menu_principal ul {
+    list-style-type: none;
+    background-color: #070606;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    display: none;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#menu_principal a {
+
+    text-decoration: none;
+    background-color: #007ADD;
+    color: #BCDCDA;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#menu_principal li {
+    margin-top: 45px;
+}
+#menu_principal a:hover{
+    color: #070606;
+    background-color: #BCDCDA;
+    transition: all .5s;
+    transition-delay: 0s;
+}
+
+/* TERMINA AQUI */
+
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 10px 15px;
+    text-align: center;
+    margin: 16px 0px 16px 0px;
+}
+
+h1,
+h3,
+p {
+    color: #BCDCDA;
+
+}
+
+p,
+li,
+h3 {
+    font-family: 'Jost', sans-serif;
+}
+
+p {
+    text-align: left;
+    margin: 8px;
+    width: 80vw;
+}
+
+/* textos */
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #007ADD;
+    margin-top: 32px;
+    padding: 24px;
+}
+
+footer p {
+    margin: 5px;
+    color: #070606;
+}
+
+footer h2 {
+
+    margin: 0px 8px 0px 4px;
+    font-family: 'Jost', sans-serif;
+    color: #070606;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+footer a:link {
+    color: #BCDCDA;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #BCDCDA;
+}
+
+footer a:hover {
+    color: #070606;
+
+}
+
+footer a:active {
+    color: #BCDCDA;
+}
+
+
+
+
+
+/* contato */
+#img_redesocial {
+    width: 5%;
+
+}
+
+
+/* Area de serviços */
+.img_ser {
+    width: 80vw;
+    border-radius: 20px;
+    border: solid 6px #007ADD;
+}
+
+#p_ser {
+    font-size: 30px;
+
+}
+
+.dft {
+    margin: 16px 16px;
+}
+
+
+/* botão diferente aqui */
+
+
+/* BREAKPOINT - REGRAS PARA DESKTOP(do professor) */
+@media(min-width:768px) {
+
+    #logo{
+        position: relative;
+    }
+
+    #bt_menu,
+    #bt_fechar {
+        display: none;
+    }
+
+    .caixa {
+        /* width: 960px; */
+        margin: 16px;
+
+    }
+
+
+    /* Area de serviços */
+    /* li */
+    .dft {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* textos(p)  */
+    #p_ser {
+        float: inline-end;
+        max-width: 20vw;
+    }
+
+    /* section */
+    #servi {
+        display: flex;
+        max-width: 50vw;
+        /* background-color: red; */
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    /* img */
+    .img_ser {
+        width: 20vw;
+        float: left;
+       
+    }
+
+
+
+/* Pág qmSOmos */
+    #imgqmSomos{
+        width: 40vw;
+    }
+
+p{
+    width: 50vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #img_menu {
+        width: 100%;
+        display: none;
+    }
+
+    #logo {
+
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+    }
+
+    #menu_principal {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #menu_principal ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-direction: row;
+        background-color: #6d64d900;
+        position: relative;
+        height: auto;
+        padding: 0px;
+
+    }
+
+    #menu_principal li {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-direction: row;
+        position: relative;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    #menu_principal a {
+        background-color: #e4e4e400;
+        text-transform: uppercase;
+
+    }
+
+    #menu_principal a:hover {
+        color: #070606;
+    }
+
+
+}
+
+/* Footer */
+footer {
+    background-color: #007ADD;
+    margin-top: 32px;
+    padding: 24px;
+    justify-content: space-around;
+    align-items: center;
+    /* display: flex; */
+    text-align: center;
+}
+footer div{
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+    color: #070606;
+    text-align: center;
+width: 100%;
+}
+
+footer h2 {
+width: 100%;
+    margin: 0px 8px 0px 4px;
+    font-family: 'Jost', sans-serif;
+    color: #070606;
+
+}
+
+footer a {
+    width: 100%;
+    text-decoration: none;
+}
+iframe{
+    width: 50vw;
+}
+
+
+/* @media(min-width:1245px) {
+    #logo {
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+
+    }
+}
+
+@media(min-width:914px) {
+    #logo {
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+
+    }
+} */
