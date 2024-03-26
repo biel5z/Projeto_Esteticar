@@ -44,15 +44,11 @@ body {
     margin: 8px 16px;
 }
 
-
-
-
-
 iframe {
     border-radius: 20px;
     margin: 16px;
     margin-left: 20px;
-    width: 50vw;
+    width: 100vw;
     height: auto;
 }
 
@@ -149,7 +145,10 @@ p {
     align-items: center;
     flex-direction: column;
 }
-
+#maps{
+    width: 80vw;
+    
+}
 
 
 
@@ -227,7 +226,7 @@ footer a:active {
 /* botão diferente aqui */
 
 
-/* BREAKPOINT - REGRAS PARA DESKTOP(do professor) */
+/* BREAKPOINT - REGRAS PARA DESKTOP*/
 @media(min-width:768px) {
 
     #logo{
@@ -355,6 +354,10 @@ body{
 
     #menu_principal a:hover {
         color: #070606;
+    }
+
+    #maps{
+        width: 50vw;
     }
 
 
