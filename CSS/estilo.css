@@ -102,7 +102,8 @@ iframe {
 #menu_principal li {
     margin-top: 45px;
 }
-#menu_principal a:hover{
+
+#menu_principal a:hover {
     color: #070606;
     background-color: #BCDCDA;
     transition: all .5s;
@@ -145,9 +146,10 @@ p {
     align-items: center;
     flex-direction: column;
 }
-#maps{
+
+#maps {
     width: 80vw;
-    
+
 }
 
 
@@ -200,36 +202,130 @@ footer a:active {
 
 
 /* contato */
-#img_redesocial {
+.img_redesocial {
     width: 5%;
 
 }
-
-
-/* Area de serviços */
-.img_ser {
-    width: 80vw;
-    border-radius: 20px;
-    border: solid 6px #007ADD;
+.user_cont{
+    text-decoration: none;color: #007ADD;
 }
 
-#p_ser {
-    font-size: 30px;
+.user_cont:hover{
+    color: #BCDCDA;
+    transition: all .5s;
+    transition-delay: 0s;
+}
+.user_cont:active{
+   color: #e41b1b;
+}
+
+.user_insta:visited{
+    
+}
+/* Area de serviços */
+#card {
+    display: grid;
+    grid-template-columns: auto auto;
 
 }
 
 .dft {
+    /*MEU AQUI
+    /*width: 40vw;
     margin: 16px 16px;
+    background-color: #007ADD;
+    border-radius: 10px;*/
+
+    margin: 16px 16px;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #BCDCDA;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+
+
+}
+
+.img_ser {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.p_ser {
+    color: #070606;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.dft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 38vw;
 }
 
 
-/* botão diferente aqui */
+.dft_header {
+    width: 100%;
+    height: 100%;
+    line-height: .7cm;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+}
+
+.dft_body {
+    margin: 0px 20px 20px 0;
+    padding: 5px;
+}
+
+
+
+.dft_footer {
+    margin: 20px 10px 15px 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.action {
+    /*MEU AQUI
+    /*display: inline-flex;
+    margin: 16px 10px;
+    padding: 4px 8px;
+    background-color: #BCDCDA;
+    color: #070606;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 4px;*/
+
+    color: #BCDCDA;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    gap: 0.25rem;
+    background-color: #007ADD;
+    font-family: 'Jost', sans-serif;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+
+
+
+}
+
+
 
 
 /* BREAKPOINT - REGRAS PARA DESKTOP*/
 @media(min-width:768px) {
 
-    #logo{
+    #logo {
         position: relative;
     }
 
@@ -239,7 +335,6 @@ footer a:active {
     }
 
     .caixa {
-        /* width: 960px; */
         margin: 16px;
 
     }
@@ -247,9 +342,19 @@ footer a:active {
 
     /* Area de serviços */
     /* li */
+
+    #card {
+        display: flex;
+        max-width: 50vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
     .dft {
         display: flex;
         flex-direction: column;
+        position: relative;
 
     }
 
@@ -260,35 +365,29 @@ footer a:active {
     }
 
     /* section */
-    #servi {
-        display: flex;
-        max-width: 50vw;
-        /* background-color: red; */
-        flex-wrap: wrap; 
-        justify-content: space-between;
-    }
 
     /* img */
     .img_ser {
         width: 20vw;
         float: left;
-       
+
     }
 
 
 
-/* Pág qmSOmos */
-    #imgqmSomos{
+    /* Pág qmSOmos */
+    #imgqmSomos {
         width: 40vw;
     }
 
-p{
-    width: 50vw;
-}
+    p {
+        width: 50vw;
+    }
 
-body{
-    overflow-x: hidden;
-}
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -356,7 +455,7 @@ body{
         color: #070606;
     }
 
-    #maps{
+    #maps {
         width: 50vw;
     }
 
@@ -373,7 +472,8 @@ footer {
     /* display: flex; */
     text-align: center;
 }
-footer div{
+
+footer div {
     width: 60vw;
     margin: 0 auto;
     text-align: center;
@@ -383,11 +483,11 @@ footer p {
     margin: 5px;
     color: #070606;
     text-align: center;
-width: 100%;
+    width: 100%;
 }
 
 footer h2 {
-width: 100%;
+    width: 100%;
     margin: 0px 8px 0px 4px;
     font-family: 'Jost', sans-serif;
     color: #070606;
@@ -398,7 +498,8 @@ footer a {
     width: 100%;
     text-decoration: none;
 }
-iframe{
+
+iframe {
     width: 50vw;
 }
 
