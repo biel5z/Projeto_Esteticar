@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+
 body {
     background-color: #070606;
 }
@@ -33,23 +34,20 @@ body {
 /* Alterações da pág 2(Quem somos) */
 #imgqmSomos {
     /* padding: 5px; */
-    width: 80vw;
-    border-radius: 20px;
-    border: solid 6px #007ADD;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 
 }
 
 #qmSomos {
+    width: 80vw;
     padding: 8px;
     margin: 8px 16px;
-}
-
-iframe {
     border-radius: 20px;
-    margin: 16px;
-    margin-left: 20px;
-    width: 100vw;
-    height: auto;
+    border: solid 6px #007ADD;
+    
 }
 
 
@@ -134,7 +132,7 @@ h3 {
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     margin: 8px;
     width: 80vw;
 }
@@ -149,7 +147,8 @@ p {
 
 #maps {
     width: 80vw;
-
+    border-radius: 20px;
+    border:solid 4px #007ADD;
 }
 
 
@@ -206,22 +205,24 @@ footer a:active {
     width: 5%;
 
 }
-.user_cont{
-    text-decoration: none;color: #007ADD;
+
+.user_cont {
+    text-decoration: none;
+    color: #007ADD;
 }
 
-.user_cont:hover{
+.user_cont:hover {
     color: #BCDCDA;
     transition: all .5s;
     transition-delay: 0s;
 }
-.user_cont:active{
-   color: #e41b1b;
+
+.user_cont:active {
+    color: #e41b1b;
 }
 
-.user_insta:visited{
-    
-}
+.user_insta:visited {}
+
 /* Area de serviços */
 #card {
     display: grid;
@@ -266,7 +267,7 @@ footer a:active {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    width: 38vw;
+    width: 35vw;
 }
 
 
@@ -323,7 +324,7 @@ footer a:active {
 
 
 /* BREAKPOINT - REGRAS PARA DESKTOP*/
-@media(min-width:768px) {
+@media(min-width:700px) {
 
     #logo {
         position: relative;
@@ -395,14 +396,31 @@ footer a:active {
         align-items: center;
     }
 
+    /*area de serviços aqui */
+    .img_ser {
+        width: 100%;
+    }
+
+    .dft {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 16vw;
+    }
+
+    #card {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
     #img_menu {
         width: 100%;
         display: none;
     }
 
     #logo {
-
-        width: 50vw;
+        width: 30vw;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -419,6 +437,8 @@ footer a:active {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+
     }
 
     #menu_principal ul {
